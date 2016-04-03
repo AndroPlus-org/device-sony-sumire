@@ -18,6 +18,12 @@ TARGET_BOOTLOADER_BOARD_NAME := E6653
 
 WIFI_BUS := PCIE
 
-BOARD_KERNEL_CMDLINE += androidboot.hardware=sumire
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
+TW_BRIGHTNESS_PATH := /sys/class/leds/wled/brightness
+TW_MAX_BRIGHTNESS := 4095
+TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone10/temp
+
+TW_THEME := portrait_hdpi

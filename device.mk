@@ -35,7 +35,11 @@ PRODUCT_COPY_FILES += \
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    device/sony/sumire/rootdir/sbin/mhl_sii8620_8061_drv.ko:root/sbin/mhl_sii8620_8061_drv.ko
+    device/sony/sumire/rootdir/sbin/core_ctl.ko:root/sbin/core_ctl.ko \
+    device/sony/sumire/rootdir/sbin/ecryptfs.ko:root/sbin/ecryptfs.ko \
+    device/sony/sumire/rootdir/sbin/kscl.ko:root/sbin/kscl.ko \
+    device/sony/sumire/rootdir/sbin/mhl_sii8620_8061_drv.ko:root/sbin/mhl_sii8620_8061_drv.ko \
+    device/sony/sumire/rootdir/sbin/texfat.ko:root/sbin/texfat.ko
 
 # Device Init
 PRODUCT_PACKAGES += \
